@@ -1,0 +1,38 @@
+body {
+    background-color: #2d049c;
+}
+
+h2 {
+    color: #8f07b9;
+}
+
+main {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #2d049c, #8f07b9);
+}
+
+.content {
+    border: 2px solid #2d049c;
+    width: 40%;  
+    min-height: 200px;
+    margin: 30px;
+    background-color: #0795b9;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.content p {
+    text-align: start;
+    font-size: clamp(1rem, 2vw, 2.5rem); /* Makes it responsive */
+}
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="/css/home.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Home page</h1>
+    <% if (contxt.length > 0) { %>
+    <main>
+        <% for (const el of contxt) { %>
+        <div class="content">
+            <h2><%= el.name %></h2> 
+            <p><%= el.paragraph %></p>
+        </div>
+        <% } %>
+    </main>
+    <% } else { %>
+        <h2> There are no users</h2>
+    <% } %>
+</body>
+</html>
